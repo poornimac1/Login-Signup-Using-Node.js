@@ -1,0 +1,12 @@
+h1 <font color=RED>Welcome,</font>
+h4 Please choose a Username and password to signup 
+form(id="signup", method="POST", action="/signup")
+	lable(for='username') User Name &nbsp
+	input#username(type='text', name='username')
+	&nbsp &nbsp &nbsp
+	lable(for='password') Password &nbsp
+	input#password(type='password', name='password')
+	&nbsp &nbsp
+	input(type="submit", value="Signup")
+
+h1!=message
